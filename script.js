@@ -17,8 +17,7 @@ function convertToBinary(x) {
 function convert() {
     let DecimalNumber = document.querySelector("#enter-number").value;
     const ParentBox = document.querySelector("#parent-box");
-    let process = convertToBinary(DecimalNumber);
-    let OutputText = `<p>steps:</p><br>Decimal number = ${DecimalNumber}<hr>${process}`
+    let OutputText = `<p>steps:</p><br>Decimal number = ${DecimalNumber}<hr>${convertToBinary(DecimalNumber)}`
     // check if already ChildBox present
     if(document.querySelectorAll('.childbox').length !=0){
         ParentBox.removeChild(document.querySelectorAll('.childbox')[0])
